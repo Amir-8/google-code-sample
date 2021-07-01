@@ -10,21 +10,22 @@ class VideoPlayer:
         self._video_library = VideoLibrary()
 
     def number_of_videos(self):
-        num_videos = len(self._video_library.get_all_videos())
+        num_videos = len(self._video_library.get_all_videos_num())
         print(f"{num_videos} videos in the library")
 
     def show_all_videos(self):
-        """Returns all videos."""
-
-        print("show_all_videos needs implementation")
+        all_videos = (self._video_library.get_all_videos())
+        print(all_videos)
 
     def play_video(self, video_id):
         """Plays the respective video.
-
         Args:
             video_id: The video_id to be played.
         """
-        print("play_video needs implementation")
+        play_video = (self._video_library.get_all_videos())
+        print(play_video)
+
+        # print("play_video needs implementation")
 
     def stop_video(self):
         """Stops the current video."""
